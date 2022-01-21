@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <!-- <link rel="stylesheet" href="./user.css"> -->
+
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/taskmangement.css">
+    <!-- font-awesome link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet" />
+    <title>userlist</title>
+</head>
+
+<body>
+    <!-- userlist-wrapper start -->
+    <div class="wrapper">
+        <!-- userlist-sidebar start here -->
+        <div class="sidebar ">
+            <!-- userlist-sidebar-company-logo-section start here -->
+            <div class="sidebar-company-logo-section">
+                <img src="/Images/logo.png" alt="company logo">
+                <button class="sidebar-close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="sidenav-container">
+                <div class="sidenav-header">
+                    <i class="fas fa-home icon "></i>
+                    <span class="nav-text">
+                        <a href="#">Home</a>
+                    </span>
+
+                </div>
+                <div class="sidenav-header">
+                    <i class="fas fa-tasks icon"></i>
+
+                    <!-- <i class="fas fa-users icon"></i> -->
+                   <span class="nav-text"> Task
+                    <i class="fa fa-chevron-right"></i></span>
+                </div>
+                <div class="sidenav-subheader">
+                    <a href="user.html">Create Task</a>
+                    <a href="viewtask.html">View Task</a>
+                   
+                </div>
+                <div class="sidenav-header">
+                    <i class="fas fa-briefcase icon"></i>
+                    <span class="nav-text">
+                    Task Category
+                    <i class="fa fa-chevron-right "></i>
+                </span>
+                </div>
+                <div class="sidenav-subheader">
+                    <a href="employee.html">Create TaskCategory</a>
+                    <a href="employee.html">View TaskCategory</a>
+                 
+                </div>
+                
+              
+            </div>
+
+
+
+
+
+
+
+            <!-- sidebar menu list end here -->
+        </div>
+        <!-- userlist-sidebar end here -->
+        <!-- userlist-main-container start here  -->
+        <div class="main-container">
+            <!-- userlist-header-section start here -->
+            <div class="main-container-header-section">
+                <!-- userlist-sidebar-section start here -->
+                <div class="main-container-sidebar-section">
+                    <button class="main-container-sidebar-btn sidebarOpen "><i class="fas fa-bars"></i></button>
+                </div>
+                <!-- userlist-sidebar-section end here -->
+                <!-- userlist-image-section start here -->
+                <div class="main-container-image-section">
+                    <h1>Mananjay Shrestha</h1>
+                    <img src="/Images/profile.jpg" alt="userimage">
+                </div>
+                <!-- userlist-image-section end here -->
+            </div>
+            <!-- userlist-header-section end here -->
+            <!-- logout section start -->
+            <div class="main-container-logout-section">
+                <!-- userlist-user-profile-img start here -->
+                <div class="main-container-user-profile-img">
+                    <img src="/Images/profile.jpg" alt="userimage">
+                    <button class="main-container-logout-section-close-btn"><i class="fas fa-times"></i></button>
+                </div>
+                <!-- userlist-user-profile-img start here -->
+                <h3>Mananjay Shrestha</h3>
+                <h3 class="main-container-user-email">Mananjaysth111@gmail.com</h3>
+                <button class="main-container-manage-account" >
+                    <a href="profile.html">Manage Your Account</a>
+                    </button>
+                <button class="main-container-logout-btn" onclick="newDoc()">Sign Out</button>
+                <!-- userlist-logout-footer-section start here -->
+                <div class="main-container-logout-footer-section">
+                    <h3>Privacy Policy</h3>
+                </div>
+                <!-- userlist-logout-footer-section end here -->
+            </div>
+            <!-- logout section end -->
+            <!-- userlist-title-section start here -->
+            <div class="home-container-section">
+                <h1>Welcome To Dashboard</h1>
+            </div>
+           
+        </div>
+        <!-- userlist-main-container end here  -->
+
+    </div>
+    <!-- userlist-wrapper start -->
+
+</body>
+<script src="/Javascript/layout.js"></script>
+
+</html>

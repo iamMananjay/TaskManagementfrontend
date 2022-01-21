@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <!-- <link rel="stylesheet" href="./user.css"> -->
+
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/taskmangement.css">
+    <!-- font-awesome link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet" />
+    <title>userlist</title>
+</head>
+
+<body>
+    <!-- userlist-wrapper start -->
+    <div class="wrapper">
+        <!-- userlist-sidebar start here -->
+        <div class="sidebar ">
+            <!-- userlist-sidebar-company-logo-section start here -->
+            <div class="sidebar-company-logo-section">
+                <img src="/Images/logo.png" alt="company logo">
+                <button class="sidebar-close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="sidenav-container">
+                <div class="sidenav-header">
+                    <i class="fas fa-home icon "></i>
+                    <span class="nav-text">
+                        <a href="Dashboard.html">Home</a>
+                    </span>
+
+                </div>
+                <div class="sidenav-header">
+                    <i class="fas fa-tasks icon"></i>
+
+                    <!-- <i class="fas fa-users icon"></i> -->
+                   <span class="nav-text"> Task
+                    <i class="fa fa-chevron-right"></i></span>
+                </div>
+                <div class="sidenav-subheader">
+                    <a href="user.html">Create Task</a>
+                    <a href="viewtask.html">View Task</a>
+                   
+                </div>
+                <div class="sidenav-header">
+                    <i class="fas fa-briefcase icon"></i>
+                    <span class="nav-text">
+                    Task Category
+                    <i class="fa fa-chevron-right "></i>
+                </span>
+                </div>
+                <div class="sidenav-subheader">
+                    <a href="employee.html">Create TaskCategory</a>
+                    <a href="employee.html">View TaskCategory</a>
+                 
+                </div>
+                
+              
+            </div>
+
+
+
+
+
+
+
+            <!-- sidebar menu list end here -->
+        </div>
+        <!-- userlist-sidebar end here -->
+        <!-- userlist-main-container start here  -->
+        <div class="main-container">
+            <!-- userlist-header-section start here -->
+            <div class="main-container-header-section">
+                <!-- userlist-sidebar-section start here -->
+                <div class="main-container-sidebar-section">
+                    <button class="main-container-sidebar-btn sidebarOpen "><i class="fas fa-bars"></i></button>
+                </div>
+                <!-- userlist-sidebar-section end here -->
+                <!-- userlist-image-section start here -->
+                <div class="main-container-image-section">
+                    <h1>Mananjay Shrestha</h1>
+                    <img src="/Images/profile.jpg" alt="userimage">
+                </div>
+                <!-- userlist-image-section end here -->
+            </div>
+            <!-- userlist-header-section end here -->
+            <!-- logout section start -->
+            <div class="main-container-logout-section">
+                <!-- userlist-user-profile-img start here -->
+                <div class="main-container-user-profile-img">
+                    <img src="/Images/profile.jpg" alt="userimage">
+                    <button class="main-container-logout-section-close-btn"><i class="fas fa-times"></i></button>
+                </div>
+                <!-- userlist-user-profile-img start here -->
+                <h3>Mananjay Shrestha</h3>
+                <h3 class="main-container-user-email">Mananjaysth111@gmail.com</h3>
+                <button class="main-container-manage-account" >
+                    <a href="profile.html">Manage Your Account</a>
+                    </button>
+                <button class="main-container-logout-btn" onclick="newDoc()">Sign Out</button>
+                <!-- userlist-logout-footer-section start here -->
+                <div class="main-container-logout-footer-section">
+                    <h3>Privacy Policy</h3>
+                </div>
+                <!-- userlist-logout-footer-section end here -->
+            </div>
+            <!-- logout section end -->
+            <!-- userlist-title-section start here -->
+            <!-- <div class="home-container-section">
+                <h1>Welcome To Dashboard</h1>
+            </div> -->
+            <div class="userlist-list-section">
+                <!-- userlist-list-header-section start here -->
+                <div class="userlist-list-header-section">
+                    <div class="sn">S.N.</div>
+                    <div class="name">Name</div>
+                    <div class="userlist-username">Username</div>
+                    <div class="userlist-email">Email</div>
+                    <div class="userlist-country">Country</div>
+                    <div class="userlist-state">State</div>
+                    <div class="userlist-edit-delete">Action</div>
+                </div>
+                 <!-- userlist-firstrowlist-section start here -->
+                 <div class="userlist-rowlist-section">
+                    <div class="userlist-sn-value">1</div>
+                    <div class="userlist-name-value">Mananjay Shrestha</div>
+                    <div class="userlist-username-value">Mananjayshrestha12</div>
+                    <div class="userlist-email-value">Mananjaysth111@gmail.com</div>
+                    <div class="userlist-country-value">Nepal</div>
+                    <div class="userlist-state-value">Bagmati</div>
+                    <div class="userlist-edit-delete-value" style="padding: 0 0;">
+                        <button class="edit-btn"><i class="fas fa-user-lock"></i></button>
+                        <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+                   <!-- userlist-secondrowlist-section start here -->
+                   <div class="userlist-rowlist-section">
+                    <div class="userlist-sn-value">2</div>
+                    <div class="userlist-name-value">Dorje Hyolmo</div>
+                    <div class="userlist-username-value">Dorjehyolmo34</div>
+                    <div class="userlist-email-value">Dorjehyplmo@gmail.com</div>
+                    <div class="userlist-country-value">Nepal</div>
+                    <div class="userlist-state-value">Bagmati</div>
+                    <div class="userlist-edit-delete-value" style="padding: 0 0;">
+                        <button class="edit-btn"><i class="fas fa-user-lock"></i></button>
+                        <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+                <!-- userlist-secondrowlist-section end here -->
+                        <!-- userlist-thirdrowlist-section start here -->
+                        <div class="userlist-rowlist-section">
+                            <div class="userlist-sn-value">3</div>
+        
+                            <div class="userlist-name-value">Sujan Yonjan</div>
+                            <div class="userlist-username-value">Sujanyonjan56</div>
+                            <div class="userlist-email-value">Sujanyonjan56@gmail.com</div>
+                            <div class="userlist-country-value">Nepal</div>
+                            <div class="userlist-state-value">Bagmati</div>
+                            <div class="userlist-edit-delete-value" style="padding: 0 0;">
+                                <button class="edit-btn"><i class="fas fa-user-lock"></i></button>
+                                <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </div>
+                        <!-- userlist-thirdrowlist-section end here -->
+                        <!-- userlist-fouthrowlist-section start here -->
+                        <div class="userlist-rowlist-section">
+                            <div class="userlist-sn-value">4</div>
+        
+                            <div class="userlist-name-value">Manjil Acharya</div>
+                            <div class="userlist-username-value">Manjilacharya78</div>
+                            <div class="userlist-email-value">Manjilacharya78@gmail.com</div>
+                            <div class="userlist-country-value">Nepal</div>
+                            <div class="userlist-state-value">Bagmati</div>
+                            <div class="userlist-edit-delete-value" style="padding: 0 0;">
+                                <button class="edit-btn"><i class="fas fa-user-lock"></i></button>
+                                <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </div>
+                        <!-- userlist-fouthrowlist-section end here -->
+                        <!-- userlist-fifthrowlist-section start here -->
+                        <div class="userlist-rowlist-section">
+                            <div class="userlist-sn-value">5</div>
+        
+                            <div class="userlist-name-value">Minal pandit</div>
+                            <div class="userlist-username-value">Minalpandit910</div>
+                            <div class="userlist-email-value">Meenalme1@gmail.com</div>
+                            <div class="userlist-country-value">Nepal</div>
+                            <div class="userlist-state-value">Bagmati</div>
+                            <div class="userlist-edit-delete-value" style="padding: 0 0;">
+                                <button class="edit-btn"><i class="fas fa-user-lock"></i></button>
+                                <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </div>
+                        <!-- userlist-fifthrowlist-section end here -->
+                        <!-- userlist-sixthrowlist-section start here -->
+                        <div class="userlist-rowlist-section">
+                            <div class="userlist-sn-value">6</div>
+        
+                            <div class="userlist-name-value">Pashi Sherpa</div>
+                            <div class="userlist-username-value">Pashisherpa11</div>
+                            <div class="userlist-email-value">Pashisherpa11@gmail.com</div>
+                            <div class="userlist-country-value">Nepal</div>
+                            <div class="userlist-state-value">Bagmati</div>
+                            <div class="userlist-edit-delete-value" style="padding: 0 0;">
+                                <button class="edit-btn"><i class="fas fa-user-lock"></i></button>
+                                <button class="delete-btn"><i class="fas fa-trash"></i></button>
+                            </div>
+                        </div>
+                         <!-- userlist-sixthrowlist-section end here -->
+                         <div class="userlist-page-change-section">
+                            <!-- userlist-previous-page-section start here -->
+                            <div class="userlist-previous-page-section">
+                                <button class="userlist-previous-btn"><i class="fas fa-chevron-left"></i>
+                                </button>
+                                <!-- <p>Previous Page</p> -->
+                            </div>
+                            <!-- userlist-previous-page-section end here -->
+                            <!-- userlist-current-page-section start here -->
+                            <div class="userlist-current-page-section">
+                                1
+                            </div>
+                            <!-- userlist-current-page-section end here -->
+                            <!-- userlist-next-page-section start here -->
+                            <div class="userlist-next-page-section">
+                                <!-- <p>Next Page</p> -->
+                                <button class="userlist-next-btn"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                            <!-- userlist-next-page-section end here -->
+                        </div>
+                        <!-- userlist-page-change-section end here -->
+               
+                
+            </div>
+           
+        </div>
+        <!-- userlist-main-container end here  -->
+
+    </div>
+    <!-- userlist-wrapper start -->
+
+</body>
+<script src="/Javascript/layout.js"></script>
+
+</html>
