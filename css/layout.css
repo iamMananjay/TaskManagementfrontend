@@ -89,7 +89,7 @@ a.active {
   display: grid;
   place-items: center;
   margin-bottom: 3em;
-  height: 79px;
+  height: 76px;
   width: 100%;
   border-bottom: 2px solid #0db8de;
 }
@@ -200,6 +200,7 @@ a.active {
   border-radius: 3%;
   text-align: center;
   display: none;
+  z-index: 1000;
   border: 1px solid var(--border-color);
 }
 .main-container-logout-section.show {
@@ -501,6 +502,6 @@ a.active {
     display: none;
     color: white;
     border: unset;
-    box-shadow: 8px 8px 8px #888888;
+    /* box-shadow: 8px 8px 8px #888888; */
   }
 }
