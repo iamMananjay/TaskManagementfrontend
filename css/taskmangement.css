@@ -826,8 +826,6 @@ label {
   }
   .createbtn.validate::after {
     content: "Success";
-    /* font-family: "Font Awesome";
-    content: "\f00c"; */
   }
 
   @keyframes rotating {
@@ -839,17 +837,3 @@ label {
     }
   }
 }
-
-/* taskcategory */
-/* .taskghj-container-section {
-  display: grid;
-  place-items: center;
-  height: 89.5%;
-  font-size: 1.5em;
-  color: rgb(194, 192, 192);
-}
-.main-termandconditions-form {
-  height: 100px;
-  width: 50%;
-  background-color: white;
-} */

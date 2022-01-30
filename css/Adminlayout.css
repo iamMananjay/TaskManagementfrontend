@@ -16,6 +16,9 @@
 .icon.active {
   background-color: var(--sidebar-hover);
 }
+.header-section {
+  border-bottom: 2px solid #0db8de;
+}
 .sidebar {
   position: fixed;
   top: 0;
@@ -37,6 +40,16 @@
   align-items: center;
   padding: 0px 20px;
   box-shadow: 0 1px 0 0 rgb(181 189 202 / 20%), 7px 0 15px 0 rgb(69 90 100 / 9%);
+}
+.sidebar .logo-details.employee {
+  height: 75px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  border-bottom: 2px solid #0db8de;
+  box-shadow: unset;
+  /* box-shadow: 0 1px 0 0 rgb(181 189 202 / 20%), 7px 0 15px 0 rgb(69 90 100 / 9%); */
 }
 
 .sidebar .logo-details img {
@@ -97,6 +110,9 @@
   list-style: none;
   transition: all 0.4s ease;
 }
+/* .sidebar .nav-links.employee li {
+  border-bottom: 2px solid #0db8de;
+} */
 .sidebar .nav-links li .icon-link {
   display: flex;
   align-items: center;
@@ -206,6 +222,57 @@
   transform: translateY(-50%);
 }
 
+/* profile section */
+.sidebar .profile-details {
+  position: fixed;
+  width: 260px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-color);
+  transition: all 0.5s ease;
+  padding: 6px 0;
+}
+.sidebar.close .profile-details {
+  width: 78px;
+  background-color: none;
+}
+.sidebar .profile-details .profile-content {
+  display: flex;
+  align-items: center;
+}
+.sidebar .profile-details img {
+  height: 52px;
+  width: 52px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 0 14px 0 12px;
+  background-color: var(--bg-color);
+  transition: all 0.5s ease;
+}
+
+.sidebar.close .profile-details img {
+  padding: 10px;
+}
+.sidebar.close .profile-details i,
+.sidebar .profile-details .profile_name,
+.sidebar .profile-details .job {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.sidebar.close .profile-details i,
+.sidebar.close .profile-details .profile_name,
+.sidebar.close .profile-details .job {
+  display: none;
+}
+.sidebar .profile-details .job {
+  font-size: 12px;
+}
+
 /* logoutsection */
 
 .main-container-logout-section {
@@ -220,6 +287,9 @@
   display: none;
   color: white;
   border: unset;
+}
+.main-container-logout-section.employee {
+  height: 260px;
 }
 .main-container-logout-section.show {
   display: block;
@@ -277,6 +347,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.main-container-logout-footer-section.footer {
+  margin-top: 1em;
+  height: 40px;
+  /* background-color: red; */
 }
 .main-container-logout-footer-section h3 {
   margin: 0 0 0 0;
@@ -345,8 +420,14 @@
   font-size: 2em;
   transition: all 0.2s linear;
 }
-.main-container-image-section h1 {
-  display: none;
+.main-container-image-section {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.main-container-image-section h5 {
+  margin-right: 1em;
 }
 .main-container-image-section img {
   width: 45px;
