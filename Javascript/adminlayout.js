@@ -1,6 +1,5 @@
 let arrow = document.querySelectorAll(".arrow");
 let icon = document.querySelector(".icon");
-console.log(arrow);
 
 for (let i = 0; i < arrow.length; i++) {
   arrow[i].addEventListener("click", (e) => {
@@ -87,8 +86,68 @@ function newDoc() {
 // createtask js
 
 
+
+
+
+
+
+const modal = document.getElementById("myModal");
+const modaldetail = document.getElementById("myModal-detail");
+
+const deletbtn = document.querySelectorAll(".delete-btn");
+const editbtn = document.querySelectorAll(".edit-btn");
+const clearfixcancelbtn = document.querySelector(".cancelbtn");
+const clearfixcancelbtnn = document.querySelector(".cancelbtnn");
+
+deletbtn.forEach((eachbtn) => {
+  eachbtn.addEventListener("click", () => {
+    modal.style.display = "block";
+  });
+});
+editbtn.forEach((eachbtn) => {
+  eachbtn.addEventListener("click", () => {
+    modaldetail.style.display = "block";
+  });
+});
+clearfixcancelbtn.addEventListener('click', ()=>{
+  modal.style.display = "none";
+
+
+
+})
+
+clearfixcancelbtnn.addEventListener('click',()=>{
+  modaldetail.style.display="none";
+})
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+   
+
+  }
+  else if(event.target == modaldetail){
+    modaldetail.style.display="none";
+
+  }
+};
+
+
+
+
+
+const taskcategorycheckbox = document.querySelector('.taskcategorycheckbox');
+const taskcategorydropdown = document.querySelector('.taskcategory-form-input');
+console.log(taskcategorycheckbox);
+
+taskcategorycheckbox.addEventListener('change', ()=>{
+    taskcategorydropdown.classList.toggle("show");
+
+
+})
+
+
 const createbtn = document.querySelector('.createbtn');
-createbtn.addEventListener('click',(e)=>{
+createbtn.addEventListener('click', (e)=>{
     
     e.preventDefault();
     createbtn.classList.remove('btn');
@@ -107,18 +166,10 @@ createbtn.addEventListener('click',(e)=>{
     
             }, 2000 );
 
-})
+});
 
 
-const taskcategorycheckbox = document.querySelector('.taskcategorycheckbox');
-const taskcategorydropdown = document.querySelector('.taskcategory-form-input');
 
-console.log(taskcategorydropdown)
-taskcategorycheckbox.addEventListener('change',()=>{
-    taskcategorydropdown.classList.toggle("show");
-    console.log("ok")
-
-})
 
 
 
