@@ -82,7 +82,7 @@ a.active {
   width: 205px;
   transition: all 0.5s ease;
   color: white;
-  transform: translateX(-100%);
+  /* transform: translateX(-100%); */
   overflow-x: hidden;
 }
 .sidebar-company-logo-section {
@@ -399,10 +399,9 @@ a.active {
     top: 0;
     left: 0;
     height: 100%;
-    /* width: 225px; */
     width: 15%;
+    /* background-color: rosybrown; */
     background: var(--sidebar-color);
-    /* transform: translateX(0%); */
     transition: unset;
     z-index: 1;
     transition: all 0.5s ease;
@@ -484,9 +483,7 @@ a.active {
     transition: all 0.5s ease;
   }
   .main-container {
-    /* width: calc(100% - 15%); */
-
-    width: 85%;
+    width: 84%;
 
     transition: all 0.5s ease;
   }
@@ -502,6 +499,5 @@ a.active {
     display: none;
     color: white;
     border: unset;
-    /* box-shadow: 8px 8px 8px #888888; */
   }
 }

@@ -660,7 +660,6 @@ label {
   .createtask-container-section {
     height: 89.5%;
     width: 100%;
-    /* background-color: turquoise; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -669,7 +668,6 @@ label {
   .createtaskcategory-container-section {
     height: 89.5%;
     width: 100%;
-    background-color: turquoise;
     display: flex;
     align-items: center;
     justify-content: center;

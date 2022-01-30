@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins,", sans-serif;
+}
+:root {
+  --bg-color: #222d32;
+  --border-color: whitesmoke;
+  --sidebar-color: #1a2226;
+  --text-color: #fff;
+  --sidebar-hover: #2d3542;
+}
+
+/* create task  */
+.createtask-container-section {
+  margin-top: 75px;
+  height: calc(100% - 75px);
+  height: 88.5vh;
+  /* background-color: red; */
+  /* height: 200vh; */
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.createtask-from-section {
+  background-color: #1a2226;
+  height: 65%;
+  width: 90%;
+
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+}
+.createtask-firstrow-section {
+  height: auto;
+  width: 100%;
+  /* background-color: #1a2226; */
+  padding: 2em 1em;
+}
+.createtask-secondrow-section {
+  height: auto;
+  width: 100%;
+  /* background-color: #1a2226; */
+  padding: 2em 1em;
+}
+.createtask-thirdrow-section {
+  height: auto;
+  width: 100%;
+  /* background-color: #1a2226; */
+  padding: 2em 1em;
+  position: relative;
+}
+
+.taskfrom {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.taskfrom label {
+  font-size: 15px;
+  color: #6c6c6c;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.task-form-input {
+  background-color: #1a2226;
+  border: none;
+  border-bottom: 2px solid #0db8de;
+  border-top: 0px;
+  border-radius: 0px;
+  font-weight: bold;
+  outline: 0;
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 0px;
+  color: #ecf0f5;
+  height: 30px;
+}
+.taskcategory-form-input {
+  background-color: #1a2226;
+  border: none;
+  border-bottom: 2px solid #0db8de;
+  border-top: 0px;
+  border-radius: 0px;
+  font-weight: bold;
+  outline: 0;
+  font-size: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 0px;
+  color: #ecf0f5;
+  height: 30px;
+  display: none;
+}
+.taskcategory-form-input.show {
+  display: block;
+}
+.task-form-inputs {
+  background-color: #1a2226;
+  border: none;
+  border-bottom: 2px solid #0db8de;
+  border-top: 0px;
+  border-radius: 0px;
+  font-weight: bold;
+  outline: 0;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding-left: 0px;
+  color: #6c6c6c;
+  height: 30px;
+}
+/* btn */
+.container-btn {
+  position: absolute;
+  top: 75%;
+  right: 5%;
+}
+.createbtn.btn {
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 180px;
+  border-radius: 40px;
+  background: #1a2226;
+  border: 3px solid #0db8de;
+  color: #0db8de;
+  letter-spacing: 1px;
+  text-shadow: 0;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.createbtn.btn::after {
+  content: "Create";
+}
+#button:hover {
+  color: white;
+  background: #0db8de;
+}
+
+.createbtn.onclic {
+  width: 40px;
+  height: 40px;
+  outline: none;
+  border-color: #0db8de;
+  border-width: 4px;
+  border-radius: 50%;
+  font-size: 0;
+  border-left-color: #0db8de;
+
+  background-color: var(--sidebar-color);
+  animation: rotating 2s 0.25s linear infinite;
+}
+.createbtn.validate {
+  outline: none;
+  height: 40px;
+  text-align: center;
+  width: 180px;
+  border-radius: 40px;
+  background: #1a2226;
+  border: 3px solid #1ecd97;
+  color: #1ecd97;
+  letter-spacing: 1px;
+  text-shadow: 0;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.createbtn.validate::after {
+  content: "Success";
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* task view  */
+
+.userlist-list-section {
+  margin-top: 75px;
+  height: calc(100% - 75px);
+  height: auto;
+  width: 100%;
+  padding: 30px 2em;
+}
+.userlist-list-header-section {
+  display: grid;
+
+  grid-template-columns: 4% 10% 10% 14% 16% 11% 9% 14% 12%;
+
+  background-color: var(--bg-color);
+  height: 50px;
+  color: white;
+  padding: 1em 1em;
+  margin-top: 1em;
+  border-radius: 7px 7px 0 0;
+}
+.userlist-rowlist-section {
+  display: grid;
+  grid-template-columns: 4% 10% 10% 14% 16% 11% 9% 14% 12%;
+  color: black;
+  height: 50px;
+  padding: 1em;
+  font-size: 0.8em;
+  border: 1px solid #bebbbb;
+}
+.userlist-edit-delete-value {
+  color: white;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+}
+.delete-btn {
+  background-color: unset;
+  border: unset;
+  font-size: 20px;
+
+  height: unset;
+  width: unset;
+  color: red;
+  cursor: pointer;
+}
+.edit-btn {
+  background-color: unset;
+  border: unset;
+  font-size: 20px;
+
+  height: unset;
+  width: unset;
+  color: green;
+  cursor: pointer;
+  margin-right: 1em;
+}
+.detail-btn {
+  background-color: unset;
+  border: unset;
+  font-size: 20px;
+
+  height: unset;
+  width: unset;
+  color: green;
+  cursor: pointer;
+  margin-right: 1em;
+}
+
+.userlist-page-change-section {
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+  width: 15%;
+  margin: 1em auto;
+  /* background-color: wheat; */
+}
+
+.userlist-previous-page-section {
+  display: flex;
+  place-items: center;
+}
+.userlist-next-page-section {
+  display: flex;
+  place-items: center;
+}
+.userlist-previous-btn,
+.userlist-next-btn {
+  background-color: unset;
+  border: unset;
+  color: var(--bg-color);
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.userlist-current-page-section {
+  background-color: var(--bg-color);
+  color: white;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: grid;
+  place-items: center;
+}
+
+/* createtaskcatgory */
+.createtaskcategory-container-section {
+  margin-top: 75px;
+  height: calc(100% - 75px);
+  height: 88.5vh;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.createtaskcategory-from-section {
+  background-color: #1a2226;
+  height: 60%;
+  width: 45%;
+  position: relative;
+}
+
+/* creattaskcatgory view part */
+.taskcaetgorywrapper {
+  margin-top: 75px;
+  height: calc(100% - 75px);
+  height: 88.5vh;
+}
+.taskcategory-list-section {
+  display: block;
+  margin: 0 auto;
+  padding: 30px 2em;
+  width: 60%;
+  background-color: unset;
+}
+.taskcategory-list-header-section {
+  display: grid;
+
+  grid-template-columns: 10% 25% 35% 30%;
+
+  background-color: var(--bg-color);
+  height: 50px;
+  color: white;
+  padding: 1em 1em;
+  margin-top: 1em;
+  border-radius: 7px 7px 0 0;
+}
+.taskcategory-rowlist-section {
+  display: grid;
+  grid-template-columns: 10% 25% 35% 30%;
+  color: black;
+  height: 50px;
+  padding: 1em;
+  font-size: 0.8em;
+  border: 1px solid #bebbbb;
+}

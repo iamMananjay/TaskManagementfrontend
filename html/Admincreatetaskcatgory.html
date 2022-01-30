@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+
+    <link rel="stylesheet" href="/css/Adminlayout.css">
+    <link rel="stylesheet" href="/css/Admintaskmgmt.css">
+
+    <!-- font-awesome link -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet" />
+    <title>userlist</title>
+</head>
+
+<body>
+
+
+
+    <div class="sidebar">
+        <div class="logo-details">
+            <img src="/Images/logo.png" alt="company logo">
+            <span class="logo_name"  >Silicon Soft</span>
+        </div>
+        <ul class="nav-links">
+            <li  class="subheader" >
+            <label>Navigation</label>
+            </li>
+            <li>
+                <a href="/html/AdminDashboard.html" class="icon " >
+                    <i class="fas fa-home "></i>
+                    <span class="link_name " >Dashboard</span>
+    
+                </a>
+                <ul class="sub-menu blank" >
+                    <li>
+                        <a href="/html/AdminDashboard.html" class="link_name" >Dashboard</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+             <div class="icon-link icon " >
+                <a href="#" ">
+                    <i class="fas fa-tasks icon"></i>
+                    <span class="link_name" >Task</span>
+    
+                </a>
+                <i class="fa fa-chevron-right arrow"></i>
+    
+             </div>
+             <ul class="sub-menu link" >
+                <li  class="subheader" >
+                    <label>Form</label>
+                </li>
+                <li>
+                    <a href="#" class="link_name" >Task</a>
+                </li>
+                 <li>
+                    <a href="/html/Admincreatetask.html" >Create Task</a>
+                </li>
+                <li  class="subheader" >
+                    <label>Table</label>
+                </li>
+                <li>
+                    <a href="/html/Adminviewtask.html" >View Task</a>
+                </li>
+             
+             </ul>
+            </li>
+
+            <li>
+                <div class="icon-link icon" >
+                   <a href="#" class="icon">
+                    <i class="fas fa-briefcase icon"></i>
+                       <span class="link_name" >TaskCategory</span>
+       
+                   </a>
+                   <i class="fa fa-chevron-right arrow"></i>
+       
+                </div>
+                <ul class="sub-menu  link" >
+                 
+                    <li>
+                        <a  class="link_name" >TaskCategory</a>
+                    </li>
+                
+                    <li  class="subheader" >
+                        <label>Form</label>
+                    </li>
+                    <li>
+                       <a href="/html/Admincreatetaskcatgory.html" >Create TaskCategory</a>
+                   </li>
+                   <li  class="subheader" >
+                    <label>Table</label>
+                </li>
+                   <li>
+                    <a href="/html/Adminviewtaskcategory.html" >View TaskCategory</a>
+                </li>
+                
+                </ul>
+               </li>
+    
+        </ul>
+    
+    </div>
+
+    <section class="home-section" >
+        <div  class="navbar" >
+            <div class="main-container-sidebar-section">
+                <button class="main-container-sidebar-btn sidebarOpen "><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="main-container-image-section">
+                <h1>Mananjay Shrestha</h1>
+                <img src="/Images/profile.jpg" alt="userimage">
+            </div>
+        </div>
+           <!-- logout section start -->
+           <div class="main-container-logout-section">
+            <!-- userlist-user-profile-img start here -->
+            <div class="main-container-user-profile-img">
+                <img src="/Images/profile.jpg" alt="userimage">
+                <button class="main-container-logout-section-close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <!-- userlist-user-profile-img start here -->
+            <h3>Mananjay Shrestha</h3>
+            <h3 class="main-container-user-email">Mananjaysth111@gmail.com</h3>
+            <button class="main-container-manage-account" >
+                <a href="profile.html">Manage Your Account</a>
+                </button>
+            <button class="main-container-logout-btn" onclick="newDoc()">Sign Out</button>
+            <!-- userlist-logout-footer-section start here -->
+            <div class="main-container-logout-footer-section">
+                <h3>Privacy Policy</h3>
+            </div>
+            <!-- userlist-logout-footer-section end here -->
+        </div>
+        <!-- logout section end -->
+        <div class="createtaskcategory-container-section">    
+            <form action="" class="createtaskcategory-from-section">
+                <div class="createtask-firstrow-section">
+                    <div class="taskfrom" >
+                        <label for="">Name</label>
+                        <input type="text" class="task-form-input" >
+                        <span class="errormessage" ></span>
+
+                    </div>
+                 
+                    <div class="taskfrom" >
+                        <label for="">ManagerId</label>
+                        <select name="" id="dropdown"class="task-form-input">
+                            <option value="">Assigned By</option>
+                            <option>Mananjay Shrestha</option>
+                            <option>Anuj</option>
+                            <option>Birjesh</option>
+                            <option>Sujan</option>
+                        </select>
+
+                    </div>
+                </div>
+                
+                <div class="container-btn">
+                    <button class="createbtn btn" ></button>
+                  </div>  
+
+            </form>            
+
+       
+    </div>
+    </section>
+    
+</body>
+<script src="/Javascript/adminlayout.js"></script>
+
+</html>
