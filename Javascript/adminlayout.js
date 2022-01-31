@@ -115,26 +115,20 @@ window.onclick = function (event) {
   }
 };
 
-const taskcategorycheckbox = document.querySelector(".taskcategorycheckbox");
-const taskcategorydropdown = document.querySelector(".taskcategory-form-input");
-console.log(taskcategorycheckbox);
 
-taskcategorycheckbox.addEventListener("change", () => {
-  taskcategorydropdown.classList.toggle("show");
-});
 
-const createbtn = document.querySelector(".createbtn");
-createbtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  createbtn.classList.remove("btn");
-  createbtn.classList.add("onclic");
-  setTimeout(function () {
-    createbtn.classList.add("validate");
-    createbtn.classList.remove("onclic");
+// const createbtn = document.querySelector(".createbtn");
+// createbtn.addEventListener("click", (e) => {
+//   e.preventDefault();
+//   createbtn.classList.remove("btn");
+//   createbtn.classList.add("onclic");
+//   setTimeout(function () {
+//     createbtn.classList.add("validate");
+//     createbtn.classList.remove("onclic");
 
-    setTimeout(function () {
-      createbtn.classList.remove("validate");
-      createbtn.classList.add("btn");
-    }, 2000);
-  }, 2000);
-});
+//     setTimeout(function () {
+//       createbtn.classList.remove("validate");
+//       createbtn.classList.add("btn");
+//     }, 2000);
+//   }, 2000);
+// });

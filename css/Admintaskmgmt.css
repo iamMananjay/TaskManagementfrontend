@@ -27,7 +27,7 @@
 
 .createtask-from-section {
   background-color: #1a2226;
-  height: 65%;
+  height: 78%;
   width: 90%;
 
   display: grid;
@@ -115,7 +115,7 @@
 /* btn */
 .container-btn {
   position: absolute;
-  top: 75%;
+  top: 87%;
   right: 5%;
 }
 .createbtn.btn {
@@ -133,6 +133,7 @@
   cursor: pointer;
   transition: all 0.25s ease;
 }
+
 .createbtn.btn::after {
   content: "Create";
 }
