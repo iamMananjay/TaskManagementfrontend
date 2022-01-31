@@ -80,22 +80,13 @@ function newDoc() {
   window.location.assign("http://127.0.0.1:5500/html/login.html");
 }
 
-
-
-
 // createtask js
-
-
-
-
-
-
 
 const modal = document.getElementById("myModal");
 const modaldetail = document.getElementById("myModal-detail");
 
 const deletbtn = document.querySelectorAll(".delete-btn");
-const editbtn = document.querySelectorAll(".edit-btn");
+const detailbtn = document.querySelectorAll(".detail-btn");
 const clearfixcancelbtn = document.querySelector(".cancelbtn");
 const clearfixcancelbtnn = document.querySelector(".cancelbtnn");
 
@@ -104,72 +95,46 @@ deletbtn.forEach((eachbtn) => {
     modal.style.display = "block";
   });
 });
-editbtn.forEach((eachbtn) => {
+detailbtn.forEach((eachbtn) => {
   eachbtn.addEventListener("click", () => {
     modaldetail.style.display = "block";
   });
 });
-clearfixcancelbtn.addEventListener('click', ()=>{
+clearfixcancelbtn.addEventListener("click", () => {
   modal.style.display = "none";
+});
 
-
-
-})
-
-clearfixcancelbtnn.addEventListener('click',()=>{
-  modaldetail.style.display="none";
-})
+clearfixcancelbtnn.addEventListener("click", () => {
+  modaldetail.style.display = "none";
+});
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
-   
-
-  }
-  else if(event.target == modaldetail){
-    modaldetail.style.display="none";
-
+  } else if (event.target == modaldetail) {
+    modaldetail.style.display = "none";
   }
 };
 
-
-
-
-
-const taskcategorycheckbox = document.querySelector('.taskcategorycheckbox');
-const taskcategorydropdown = document.querySelector('.taskcategory-form-input');
+const taskcategorycheckbox = document.querySelector(".taskcategorycheckbox");
+const taskcategorydropdown = document.querySelector(".taskcategory-form-input");
 console.log(taskcategorycheckbox);
 
-taskcategorycheckbox.addEventListener('change', ()=>{
-    taskcategorydropdown.classList.toggle("show");
-
-
-})
-
-
-const createbtn = document.querySelector('.createbtn');
-createbtn.addEventListener('click', (e)=>{
-    
-    e.preventDefault();
-    createbtn.classList.remove('btn');
-        createbtn.classList.add('onclic');
-            setTimeout(function() {
-        createbtn.classList.add('validate');
-        createbtn.classList.remove('onclic');
-
-
-        setTimeout(function() {
-            createbtn.classList.remove('validate');
-            createbtn.classList.add('btn');
-
-        
-                }, 2000 );
-    
-            }, 2000 );
-
+taskcategorycheckbox.addEventListener("change", () => {
+  taskcategorydropdown.classList.toggle("show");
 });
 
+const createbtn = document.querySelector(".createbtn");
+createbtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  createbtn.classList.remove("btn");
+  createbtn.classList.add("onclic");
+  setTimeout(function () {
+    createbtn.classList.add("validate");
+    createbtn.classList.remove("onclic");
 
-
-
-
-
+    setTimeout(function () {
+      createbtn.classList.remove("validate");
+      createbtn.classList.add("btn");
+    }, 2000);
+  }, 2000);
+});
